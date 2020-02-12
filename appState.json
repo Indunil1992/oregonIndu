@@ -1,0 +1,109 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "46892c8f-04e7-4a48-97a9-861dd8b034c7": {
+        "id": "46892c8f-04e7-4a48-97a9-861dd8b034c7",
+        "parent": null,
+        "name": "oregonIndu",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "602763fc-32d4-4bfb-b0be-8c4e539c802f"
+        ],
+        "isRemovable": false,
+        "filePath": "oregonIndu"
+      },
+      "602763fc-32d4-4bfb-b0be-8c4e539c802f": {
+        "id": "602763fc-32d4-4bfb-b0be-8c4e539c802f",
+        "parent": "46892c8f-04e7-4a48-97a9-861dd8b034c7",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "oregonIndu/lambda.js",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusWest2indunilcalcheckcalany",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "75afa2d4-f2bb-4593-96f3-68575884bdea": {
+            "id": "75afa2d4-f2bb-4593-96f3-68575884bdea",
+            "name": "Test event",
+            "functionId": "602763fc-32d4-4bfb-b0be-8c4e539c802f",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "rootNode": "46892c8f-04e7-4a48-97a9-861dd8b034c7",
+    "openFiles": [
+      "602763fc-32d4-4bfb-b0be-8c4e539c802f"
+    ],
+    "currentFileId": "602763fc-32d4-4bfb-b0be-8c4e539c802f",
+    "resources": {
+      "apigusWest2indunilcalcheckcalany": {
+        "name": "apigusWest2indunilcalcheckcalany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-west-2",
+          "apiMode": 0,
+          "apiName": "indunilcal",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "check/cal",
+          "resourcePath": "/check/cal",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Test",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "oregonIndu",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-west-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1581496596316
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "oregonIndu",
+      "url": "https://github.com/Indunil1992/oregonIndu"
+    }
+  }
+}
